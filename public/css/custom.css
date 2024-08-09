@@ -1,0 +1,51 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+body.scrolled header {
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+html[data-theme=dark] header {
+  background-color: #13171f;
+}
+
+html[data-theme=light] header {
+  background-color: #fff;
+}
+
+main {
+  padding-top: 100px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}

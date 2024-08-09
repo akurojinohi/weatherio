@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UE-Weatherapp</title>
+  <link rel="stylesheet" href="./css/pico.conditional.green.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <script src="scripts/htmx.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body class="pico" hx-trigger="load" hx-get="/home.html" hx-target="#page-slot">
+  <header class="container-fluid">
+    <nav>
+      <ul>
+        <li>
+          <div hx-get="/home.html" hx-target="#page-slot"><strong>UE-Weather</strong></div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div><strong>The UE-Weather-App Starterkit</strong></div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div hx-get="/forecast.html" hx-target="#page-slot">Forecast</div>
+        </li>
+        <li>
+          <div hx-get="/history.html" hx-target="#page-slot">Historic Data </div>
+        </li>
+        <li>
+          <div hx-get="/custom.html" hx-target="#page-slot">Custom</div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container" id="page-slot">
+  </main>
+  <footer class="container-fluid">
+    A quick demo for a footer
+  </footer>
+</body>
+
+</html>
